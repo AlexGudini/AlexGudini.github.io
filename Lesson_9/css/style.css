@@ -1,0 +1,63 @@
+body
+{
+	font-family: Tahoma;
+	font-size: 24px;
+	line-height: 1.5;
+	color: #333333;
+}
+.row
+{
+	margin-top: 30px;
+}
+.header_text_h2_2 
+{
+	font-weight: 900;
+}
+.video
+{
+	margin-bottom: 20px;
+}
+.form
+{
+	padding: 20px 30px;
+	border: 5px solid #3c3cdd;
+}
+.form p
+{
+	margin-bottom: 30px;
+	font-weight: 900;
+}
+
+.form_input
+{
+	margin-top: 10px;
+}
+.form button
+{
+	height: 60px;
+	margin-top: 20px;
+}
+
+.h3_title
+{
+	margin-top: 30px;
+	padding-bottom: 80px;
+	font-weight: 900;
+}
+
+.block_images
+{
+	font-size: 16px;
+}
+.block_images p
+{
+	font-weight: 900;
+	padding-top: 20px;
+}
+
+.last_button
+{
+	margin-bottom: 100px;
+
+	padding: 0px 50px;
+}
