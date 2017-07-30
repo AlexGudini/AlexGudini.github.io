@@ -1,0 +1,103 @@
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+	font-family: Tahoma, sans-serif;
+	line-height: 1.5;
+	color: #333;
+	font-size: 18px;
+}
+.header
+{
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+.header h2 
+{
+	font-size: 24px;
+}
+.header_2
+{
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.video
+{
+	margin-top: 20px;
+}
+.youtube, .form
+{
+	display: inline-block;
+	vertical-align: top
+}
+.youtube
+{
+	padding-right: 20px;
+}
+.form
+{
+	border: 5px solid #3c3cdd;
+	font-size: 18px;
+	padding: 20px;
+	height: 295px;
+}
+.form p
+{
+	margin-bottom: 15px;
+	font-weight: 900px;
+}
+.form input
+{
+	margin-top: 15px;
+	display: block;
+	padding: 10px;
+	width: 300px;
+	height: 50px;
+}
+
+.btn
+{
+	background-color: #3c3cdd;
+	margin-top: 15px;
+	width: 300px;
+	height: 60px;
+	border: none;
+	color: white;
+	font-weight: 900;
+
+}
+.info 
+{
+	text-align: center;
+}
+.info h2
+{
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 70px;
+}
+.col 
+{
+	padding: 0px 20px;
+	display:inline-block;
+}
+.col p 
+{
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 1.2;
+	padding-top: 10px;
+}
+.bottom
+{
+	margin: 80px 0px;
+	
+	text-align: center;
+}
+.bottom button
+{
+	display: inline-block;
+}
