@@ -1,0 +1,70 @@
+* {
+  font-family: "PTSans-Narrow";
+}
+.header {
+  padding-bottom: 35px;
+  padding-top: 30px;
+  background-color: #f8c14c;
+}
+.menu {
+  padding: 30px;
+  background-color: #232323;
+}
+.menu a {
+  color: #f8c14c;
+  font-size: 18px;
+  font-weight: 900;
+}
+.menu a:hover {
+  text-decoration: none;
+}
+.ad {
+  margin-top: 3px;
+  font-weight: 900;
+  background-color: #fbd59c;
+  margin-bottom: 30px;
+}
+.ad .row_ad {
+  padding-bottom: 7px;
+}
+.ad .row_ad h1 {
+  font-family: "AABebasNeue";
+  font-size: 38px;
+  letter-spacing: 2.2px;
+}
+.info {
+  background-color: #ffffff;
+  border-bottom: 3px solid #f8c14c;
+  margin-bottom: 50px;
+}
+.machine {
+  padding: 12px 5px;
+  background: url(../img/machines_fon.png) no-repeat;
+}
+.machine .machine_img {
+  padding-right: 0px;
+}
+.machine a {
+  margin-top: 10px;
+  font-family: Tahoma;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #232323;
+}
+.machine_img,
+.machine_text {
+  display: inline-block;
+}
+.machine_img {
+  vertical-align: middle;
+  width: 107px;
+  padding-left: 10px;
+}
+.machine_text {
+  width: 137px;
+  text-align: center;
+  vertical-align: middle;
+}
+.machine10-12 {
+  margin-bottom: 70px;
+}
