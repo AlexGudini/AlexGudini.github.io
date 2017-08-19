@@ -1,0 +1,976 @@
+@font-face {
+	font-family: 'Proxima_regul';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima_bold';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@btn-color: #fcb303;
+@icons-color: #45b814;
+@text: #1a1820;
+@danger: #ff0000;
+@bg-light: #f5f5f5;
+@light: #fff;
+@border-form: #ddd;
+@border-gray: #e8e8e8;
+@border-green: #358015;
+@services-green: #286b0a;
+html
+{
+	font-size: 10px;
+}
+h1
+{
+	font-size: 4rem;
+}
+
+section
+{
+	padding: 4rem 0rem;
+	h2
+	{
+		.bold();
+		font-size: 3rem;
+	}
+}
+a:hover
+{
+	text-decoration: none;
+}
+button, a, input, textarea
+{
+	&:focus
+	{
+
+		outline: none;
+	}
+}
+
+.regul()
+{
+	font-family: 'Proxima_regul';
+}
+.bold()
+{
+	font-family: 'Proxima_bold';
+}
+p
+{
+	.regul();
+}
+
+.main_content_form
+{
+	.label_form
+	{
+		font-size: 1.3rem;
+		position: absolute;
+		display: inline-block;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		padding: 0.5rem 1rem;
+		background-color: @light;
+		.regul();
+	}
+	.form_input
+	{
+		display: block;
+		border: 1px solid @border-form;
+		width: 100%;
+		border-radius: 5px;
+		padding: 1.5rem;
+		margin-bottom: 2rem;
+	}
+}
+
+
+.main
+{
+	background: white url(../img/main.jpg) center center no-repeat;
+	background-size: cover;
+}
+.header
+{
+	padding: 3rem 0rem;
+	height: 7rem;
+}
+
+.phone_link
+{
+	text-align: right;
+	.link
+	{
+		.bold();
+		font-weight: 900;
+		font-size: 1.7rem;
+		display: inline-block;
+		color: @text;
+		height: 7rem;
+		line-height: 7rem;
+		text-align: right;
+	}
+}
+
+
+.group_btn
+{
+	background: @btn-color;
+	color: @light;
+	padding: 1.5rem 0rem;
+	width: 100%;
+	border-radius: 0.8rem;
+	text-transform: uppercase;
+	transition: all 0.2s;	
+	border: none;
+
+	.bold();
+	&:hover
+	{
+		cursor: pointer;
+		background-color: darken(@btn-color, 10%);
+	}
+}
+.wrap
+{
+	display: table;
+	width: 100%;
+	height: 7rem;
+
+	&-block
+	{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: right;
+	}
+}
+
+.header_row
+{
+	margin-top: 10rem;
+}	
+
+.main_content
+{
+	.main_title
+	{
+		.bold();
+		line-height: 4rem;
+		text-align: left;
+		margin-bottom: 3rem;
+		margin-top: -0.5rem;
+	}
+	.main_content_describ
+	{
+		.regul();
+		font-size: 2.4rem;
+		line-height: 1.2;
+		margin-bottom: 5rem;
+	}
+	.green_add
+	{
+		text-align: center;
+		padding: 1rem 3rem;
+		padding-top: 2rem;
+		display: inline-block;
+		background-color: @icons-color;
+		color: @light;
+		strong
+		{
+			font-size:2.5rem;
+			.bold();
+		}
+	}
+	.oplata_po_facty
+	{
+		.regul();
+		text-transform: uppercase;
+		font-size:2.2rem;
+		//text-align: left;
+		margin-top: 3rem;
+	}
+
+	.main_content_form
+	{
+		padding: 1rem 4rem;
+		display: block;
+		text-align: center;
+		background-color: @light;
+      .title_form
+		{
+			font-size: 1.8rem;
+			margin-bottom: 3rem;
+			.regul();
+			.header_form_bold
+			{
+				font-weight: 900;
+			}
+		}
+
+		.group_btn_form
+		{
+			padding: 1rem 0rem;
+		}
+		small
+		{
+			display: block;
+			padding-top: 2rem;
+			.regul();
+		}
+	}
+}
+
+
+
+/////////// Преимущества работы с нами /////////
+.section_header
+{
+	text-align: center;
+	.bold();
+	margin: 8rem 0rem;
+	//font-size: 3rem;
+}
+
+.features
+{
+	.features_block
+	{
+		text-align: center;
+	}
+	.features_img 
+	{
+		height: 6rem;
+		margin-bottom: 4rem;
+		img
+		{
+			display: block;
+			margin: 0 auto;
+		}	
+	}
+	h3
+	{
+		font-size: 2rem;
+		.bold();
+		margin: 2rem 0rem;
+	}
+	p
+	{
+		display: inline-block;
+		font-size: 1.6rem;
+		.regul();
+		width: 80%
+	}
+}
+
+///// Slaider //
+.slick-active
+{
+	outline: none;
+}
+.arrow
+{
+	position: absolute;
+	z-index: 99;
+	top: 50%;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	background-size: 100%;
+	transform: translateY(-50%);
+}
+.prev
+{
+	background: url(../img/arrow_left.png) center no-repeat;
+	left: 0;
+}
+.next 
+{
+	background: url(../img/arrow_right.png) center no-repeat;
+	right: 0;
+}
+
+//// Модальные окна
+.popup
+{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(0, 0, 0, 0.5);
+	&_content
+	{
+		position: fixed;
+		left: 50%;
+		top:10%;
+		transform: translateX(-50%);
+		background-color: @light;
+		padding: 1rem;
+		text-align: center;
+	}
+	&_header
+	{
+		.bold();
+	}
+	&_close
+	{
+		position: absolute;
+		top: -1.5rem;
+		right: -2rem;
+		width: 2rem;
+		text-align: center;
+		border: none;
+		background: transparent;
+		font-size: 3rem;
+		color: @light;
+	}
+	.main_form
+	{
+		.popup_textarea
+		{
+			display: block;
+			width: 100%;
+			margin-bottom: 2rem;
+			border-radius: 5px;
+		}
+	}
+}
+
+
+.prices
+{
+	background: @icons-color url(../img/Prices/prices_fon.jpg) center;
+	color: black;
+	font-size: 1.6rem;
+	.regul();
+	.prices_title
+	{
+		margin-bottom: 2rem;
+		.bold();
+	}
+	.prices_button
+	{
+		margin: 2rem 0;
+		width: 80%;
+	}
+	.prices_block
+	{
+		background-color: white;
+		padding: 1rem 3rem;
+		margin-bottom: 1.5rem;
+		min-height: 55rem;
+		box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+		.prices_block_title
+		{
+			min-height: 4rem;
+			h3
+			{
+				font-size: 1.8rem;
+				.bold();
+			}
+		}
+		
+		img
+		{
+			width: 100%;
+			max-width: 25rem;
+		}
+		.prices_number
+		{
+			margin-top: 2rem;
+			span
+			{
+				font-size: 3rem;
+				.bold();
+			}
+		}
+		.price_list
+		{
+			list-style: none;
+			padding-left: 0rem;
+			min-height: 15rem;
+			line-height: 2.5rem;
+			li:before
+			{
+				content: '';
+				display: inline-block;
+				height: 1.5rem;
+				width: 1.5rem;
+				margin-right: 0.7rem;
+				background: url(../img/Block_price/check.svg)  no-repeat center;
+				background-size: 100%;
+				vertical-align: middle;
+			}
+		}
+		.price_block_button
+		{
+			width: 50%;
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+
+.feedback
+{
+	background: url(../img/Reviews/review_fon.jpg) center no-repeat;
+	background-size: cover;
+	position: relative;
+	.prev_btn
+	{
+		left: 0rem;
+	}
+	.next_btn
+	{
+		right: 0rem;
+	}
+	.feedback_slider_btn
+	{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		border: none;
+		padding: 0;  
+	}
+	.section_header{
+
+	}
+   .feedback_slider{
+   	padding: 5rem;
+   	background-color:  #ffffff;
+   	box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+   }
+	p 
+	{
+		font-size: 1.6rem;
+	}
+	.media
+	{
+		.media-body
+		{
+			font-size: 1.4rem;
+			line-height: 1.6rem;
+			h4
+			{
+				.bold();
+				margin-top: 1rem;
+			}
+		}
+		.media-object{
+			width: 6rem;
+			margin-right: 1.5rem;
+		}
+	}
+
+	.feedback_text
+	{
+		position: relative;
+		padding: 1rem;
+		border: 2px solid @icons-color;
+		font-style: italic;
+		margin-top: 2rem;
+		&::before
+		{
+			content: '';
+			position: absolute;
+			width: 2rem;
+			height: 2rem;
+			top: -2rem;
+			left: 4rem;
+			border: 2px solid @icons-color;
+			background-color: @light;
+			border-bottom: none;
+			border-top-right-radius: 1000px;
+		}
+		p
+		{
+			width: 100%;
+		}
+	}
+	.feedback_form
+	{
+		margin-top: 6rem;
+		padding: 4rem 8rem;
+		background-color: @light;
+		.feedback_form_title
+		{
+			font-size: 2.2rem;
+			.bold();
+		}
+		.feedback_form_content
+		{
+			margin-top: 2rem;
+		}
+		button
+		{
+			max-width: 50%;
+			margin: auto;
+		}
+	}
+	img.hand
+	{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		max-width: 30rem;
+
+	}
+}
+
+.scheme
+{
+
+	background: url(../img/Scheme/fon.png) bottom -10rem right -10rem no-repeat;
+	background-size: 65rem;
+	.scheme_header
+	{
+		.scheme_title
+		{
+			margin-bottom: 3rem;
+		}
+		p
+		{
+			font-size: 1.6rem;
+			margin-bottom: 3rem;
+		}
+	}
+	.scheme_block
+	{
+		min-height: 30rem;
+		text-align: left;
+		h3
+		{
+			font-size: 2.2rem;
+			.bold();
+			margin-bottom: 1.5rem;
+		}
+		p 
+		{
+			font-size: 1.7rem
+		}
+	}
+}
+
+
+.all_inclusive
+{
+	background-color: @bg-light;
+	.all_inclusive_header
+	{
+		h2
+		{
+			font-size: 4.8rem;
+			margin-bottom: 3rem;
+		}
+		p
+		{
+			font-size: 1.6rem;
+			margin-bottom: 4rem;
+		}
+	}
+	
+	.circle_border
+	{
+		display: inline-block;
+		width: 5rem;
+		height: 5rem;
+		border: 2px solid @icons-color;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 4rem;
+		padding: 0.3rem;
+		.circle{
+			display: inline-block;
+			background-color: @icons-color;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			color: @light;
+			.bold();
+			font-size: 1.6rem;
+
+		}
+	}
+}
+
+.all_inclusive
+{
+	.media
+	{
+		min-height: 9rem;
+		h4
+		{
+			.bold();
+			font-size: 1.6rem;
+		}
+		font-size: 1.3rem;
+	}
+}
+
+.fears
+{
+	position: relative;
+	h2.fears_title
+	{
+		text-align: center;
+		.bold();
+		margin-bottom: 4rem;
+	}
+	h3
+	{
+		.bold();
+		margin-left: 1rem;
+		margin-bottom: 3rem;
+		font-size: 2.1rem;
+	}
+	ul 
+	{
+		position: relative;
+		list-style: none;
+		li
+		{
+			.regul();
+			min-height: 6rem;
+			&:before{
+				left: 1rem;
+				position: absolute;
+			}
+			
+
+		}
+	}
+	.fears_block
+	{
+		min-height: auto;
+		padding-bottom: 0rem;
+		margin-bottom: 2rem;
+	}
+	.fears_problem
+	{
+		border: 2px solid @border-gray;
+		padding: 2rem;
+		h3
+		{
+			color: #aaaaaa;
+		}
+		ul li:before
+		{
+			content: '';
+			width: 2rem;
+			height: 2rem;
+			margin-right: 1rem;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(../img/Fears/cancel.svg) center no-repeat;
+		}
+	}
+	.fears_solution
+	{
+		border: 2px solid @border-green;
+		padding: 2rem;
+		ul li:before
+		{
+			content: '';
+			width: 2rem;
+			height: 2rem;
+			margin-right: 1rem;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(../img/Fears/checked.svg) center no-repeat;
+		}
+	}
+
+	img.woman
+	{
+		position: absolute;
+		top: 17%;
+		left: 50%;
+		width: 30rem;
+		margin-left: -20rem;
+		height: 45rem;
+	}
+}
+
+
+
+.materials
+{
+	background: url(../img/Materials/fon_materials.jpg) center no-repeat;
+	background: cover;
+	text-align: center;
+	.materials_title
+	{
+		.bold();
+		margin: 8rem 0rem 4rem;
+	}
+	p 
+	{
+		margin-bottom: 7rem;
+		.regul();
+		font-size: 1.9rem;
+	}
+	.features_block
+	{
+		img
+		{
+			height: 17rem;
+			margin: auto;
+		}
+		h3
+		{
+			.bold();
+		}
+		.material_link
+		{
+			margin-bottom: 2rem; 
+			color: @border-green;
+			border-bottom: 1px dotted  @border-green;
+			&:hover
+			{
+				color: darken(@border-green, 30%);
+			}
+		}
+		.info_product
+		{
+		   display: inline-block;
+			margin-bottom: 1rem;
+			min-height: 6rem;
+		}
+
+	}
+	.materials_bottom
+	{
+		font-size: 1.8rem;
+		margin-top: 4rem;
+	}	
+}
+
+.our_work
+{
+	background: @light url(../img/Our_work/work_fon.jpg) center right -5rem  no-repeat;
+	background-size: cover;
+	padding-bottom: 10rem;
+	.main_title
+	{
+		font-size: 4rem;
+	}
+	.main_content_describ
+	{
+		font-size: 2rem;
+	}
+}
+
+.services
+{
+	text-align: center;
+	color: white;
+	padding-bottom: 10rem;
+	background-color: @services-green;
+	.services_title
+	{
+		margin-bottom: 0rem;
+	}
+	p 
+	{
+		margin: 4rem 0rem;
+		font-size: 1.9rem;
+	}
+	.services_block
+	{
+		margin: 1rem 2rem;
+		margin-bottom: 4rem;
+		min-height: 30rem;
+		img
+		{
+			display: inline-block;
+			width: 100%;
+			max-width: 30rem;
+		}
+		.services_button
+		{
+			width: 18rem;
+			font-size: 1.7rem
+		}
+	}
+	
+}
+/*============    	АДАПТИВ    ===========*/
+@media(max-width:1199px)
+{
+	.feedback
+	{
+		.feedback_form
+		{
+			padding: 2rem 3rem;
+		}
+	}
+		.all_inclusive
+		{
+			.media
+			{
+				min-height: 11rem;
+	         p 
+	         {
+	         	font-size: 1rem;
+	         }
+			}
+		}
+}
+
+
+@media(min-width:992px) and (max-width:1200px)
+{
+	.prices_block_title
+	{
+		font-size: 1.5rem;
+	}
+}
+
+@media(max-width:991px) 
+{
+	.main
+	{
+		background-position: top right;
+	}
+	.phone_link
+	{
+		text-align: center;
+	}
+	.main_content
+	{
+		text-align: center;
+		.header_row
+		{
+			margin-top: 5rem;
+			.main_title
+			{
+				text-align: center;
+			}
+			.main_content_form
+			{
+				margin-top: 3rem;
+				margin-bottom: 3rem;
+			}
+		}
+	}
+	.feedback
+	{
+		.fotorama
+		{
+			margin-bottom: 3rem;
+		}
+	}
+
+	img.hand
+	{
+		display: none;
+	}
+
+	.scheme
+	{
+		background-size: 40rem;
+	}
+
+   .fears
+   {
+   	img.woman
+   	{
+   		display: none;
+   	}
+   }
+
+   .our_work
+   {
+   	background: none;
+   	background-color: @bg-light;
+   }
+
+   .services
+   {
+   	.services_block_info
+   	{
+   		margin: 1rem 0rem;
+   	}
+   }
+}
+@media(max-width:767px) {
+	.main 
+	{
+		background-position: top left;
+	}
+	.header
+	{
+		text-align: center;
+		.group_btn
+		{
+			margin-bottom: 2.5rem;
+			font-size: 1.2rem;
+		}
+	}
+
+	.main_title
+	{
+		font-size: 2rem;
+	}
+	.wrap-block
+	{
+		text-align: center;
+	}
+
+	.feedback_form
+	{
+		button.feedback_btn
+		{
+			max-width: 100%;
+		}
+	}
+
+	.scheme
+	{
+		background: none;
+		.scheme_block
+		{
+			min-height: 25rem;
+			text-align: center;
+		}
+	}
+
+		.all_inclusive
+		{
+			.media
+			{
+				min-height: 7rem;
+
+			}
+		}
+
+
+}
+
+
+
+
+
+
+
+
